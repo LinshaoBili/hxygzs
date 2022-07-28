@@ -98,27 +98,43 @@
 		text-align: center; } 
 	</style>
 
-		<span id="time" style="color: rgba(250, 250, 250, 0.5);font-size: 3mm;text-shadow: #FFF 0px 0px 3px"></span>
-				<script>
-					var show= function(){
-						var date = new Date();
-						var year = date.getFullYear();
-						var month = date.getMonth()+1;
-						month= month<10?"0"+month:month;
-						var day = date.getDate();//获取日期
-						day= day<10?"0"+day:day;
-						var hour = date.getHours();
-						hour= hour<10?"0"+hour:hour;
-						var minute = date.getMinutes();
-						minute= minute<10?"0"+minute:minute;
-						var week = date.getDay();//获取星期
-						var second=date.getSeconds();
-						second= second<10?"0"+second:second;
-						week = "日一二三四五六".charAt(week);
-						week="星期"+week;
-						result=year+"-"+month+"-"+day+" "+week+" "+hour+":"+minute+":"+second;
-						document.getElementById("time").innerHTML=result;
-				 }
-					show();
-					setInterval("show()",1000);//来源https://blog.csdn.net/qq_43285445/article/details/110660292
-				</script>
+	<span id="time" style="color: rgba(250, 250, 250, 0.5);font-size: 3mm;text-shadow: #FFF 0px 0px 3px"></span>
+			<script>
+				var show= function(){
+					var date = new Date();
+					var year = date.getFullYear();
+					var month = date.getMonth()+1;
+					month= month<10?"0"+month:month;
+					var day = date.getDate();//获取日期
+					day= day<10?"0"+day:day;
+					var hour = date.getHours();
+					hour= hour<10?"0"+hour:hour;
+					var minute = date.getMinutes();
+					minute= minute<10?"0"+minute:minute;
+					var week = date.getDay();//获取星期
+					var second=date.getSeconds();
+					second= second<10?"0"+second:second;
+					week = "日一二三四五六".charAt(week);
+					week="星期"+week;
+					result=year+"-"+month+"-"+day+" "+week+" "+hour+":"+minute+":"+second;
+					document.getElementById("time").innerHTML=result;
+			 }
+				show();
+				setInterval("show()",1000);//来源https://blog.csdn.net/qq_43285445/article/details/110660292
+			</script>
+	
+	<div id="return" style="text-shadow: #FFF 0px 0px 3px;text-align: center;width: 40px;height: 21px;">
+		<a href="../hxygzs.html">
+			返回
+		</a>
+	</div>
+	
+	<style type="text/css">
+		#return { 
+		position:fixed; 
+		left: 0%; 
+		top: 10%; 
+		border-radius: 1mm;
+		background: rgba(0, 0, 0, 0.5); 
+		text-align: center; } 
+	</style>
