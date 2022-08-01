@@ -171,6 +171,28 @@
 		<div style="height: 3px;"></div>
 	</div>
 
+	<div style="float:right;background-color: gainsboro;height: 150px;border-radius: 1mm;box-shadow:  1px 1px 1px;margin-top: 10px;">
+		<button onclick="sanlian_button()" style="width: 250px;margin: 5px;">
+			<img src="sanlian/sanlian_off.png" style="width: 240px;margin: 0px;margin-left: -1.5%;"  onclick="sanlian()" id="sanlian" />
+		</button>
+		<script>
+			function sanlian()
+			{
+				Element=document.getElementById('sanlian')
+				if (Element.src.match('sanlian'))
+				{
+					Element.src="sanlian/sanlian.gif";
+				}
+				return
+			}
+		</script>
+		<script>
+			function sanlian_button()
+			{
+				setTimeout(function(){alert("谢谢您的三连")},3000);
+			}
+		</script>
+	</div>
 
 	<div style="float: right;width: 600px;">
 		<div style="float: right;background-color: gainsboro;width:50%;max-width: 80px;min-width:80px;border-radius: 1mm;text-align: center;box-shadow: 1px 1px 1px;margin-top: 10px;">
