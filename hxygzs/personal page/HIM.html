@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>友好的HIM</title>
+		<meta name="viewport" content="width=device-width,initial-scale=0.75,minimum-scale=0.75,maximum-scale=0.75,user-scalable=no" />
+		<link rel="icon" href="../png/HIM_logo.png" type="image/x-icon">
+	</head>
+
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+	
+	<body style="width: 100%;height:100%;background: url(../png/6.png) #0A0C0B no-repeat center 10%;"></body>
+
+	<div style="width: 100%;height:50px;background-color:rgba(174, 174, 174, 0.5);border-radius: 2mm;max-width: 580px;margin: 0px auto;">
+		<div style="text-align: center;">
+			<a href="https://space.bilibili.com/446927057?spm_id_from=333.337.0.0">
+				<img src="../png/HIM.png" style="width: 50px;border-radius: 10mm;text-shadow: #FFF 0px 0px 5px"/>
+			</a>
+		</div>
+		<div style="text-align: center;">
+			<div style="color: #FFF;height: 3px;width: 99%;margin: 3px;text-shadow: #FFF 0px 0px 5px;">
+				友好的HIM
+			</div>
+			<div style="font-size: 1mm;float: left;background-color:rgba(174, 174, 174, 0);color: #111111;margin-left: 10%;">
+				你是怎么进来的
+			</div>
+		</div>
+	</div>
+
+	
+	<div style="background-color:rgba(174, 174, 174, 0.5);height: 500px;border-radius: 1mm;min-width:200px;max-width:350px;margin: 35px auto;">
+		<div style="text-align: center;">
+			<div style="padding: 10px;text-shadow: #FFF 0px 0px 5px;color: #FFF">
+				<div>
+					我制作的minecraft数据包:
+					<a href="https://www.mcbbs.net/thread-1171752-1-1.html" style="text-decoration: none;">
+						[肝帝生存]
+					</a>
+					<a href="https://www.mcbbs.net/thread-1171752-1-1.html">
+						<img src="../png/7.png" style="width: 50px;border-radius: 1mm;text-align: center;margin: 10px;"/>
+					</a>
+				</div>
+				<div>
+					
+				</div>
+				<div>
+					
+				</div>
+				<div>
+					
+				</div>
+				<div>
+					
+				</div>
+				<div>
+					<a href="https://space.bilibili.com/446927057?spm_id_from=333.337.0.0" target="_blank" style="text-decoration:none;">
+						我的bilibili
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div style="width:210px;text-align: center;background-color:rgba(174, 174, 174, 0.5);border-radius: 1mm;float:right;box-shadow: 1px 1px 1px;text-shadow: #FFF 0px 0px 5px" id="html_1">
+		<div style="padding: 1mm;">
+			网页由
+			<a href="https://space.bilibili.com/104930126?spm_id_from=333.337.0.0" target="_blank"> "林少想要硬币"
+			</a>制作
+		 </div>
+	</div>
+		<div style="color: gainsboro;height: 50mm;width: 100%;"></div>
+	
+	<style type="text/css"> 
+		#html_1 { 
+		position:fixed; 
+		left: 0%; 
+		top: 90%; 
+		width:80px; 
+		line-height:20px; 
+		background: #FC6; 
+		text-align: center; } 
+	</style>
+	
+	<style type="text/css">
+		#time { 
+		position:fixed; 
+		left: 80%; 
+		top: 88%; 
+		width:80px; 
+		line-height:20px; 
+		background: rgba(0, 0, 0, 0.5); 
+		text-align: center; } 
+	</style>
+
+	<span id="time" style="color: rgba(250, 250, 250, 0.5);font-size: 3mm;text-shadow: #FFF 0px 0px 3px"></span>
+			<script>
+				var show= function(){
+					var date = new Date();
+					var year = date.getFullYear();
+					var month = date.getMonth()+1;
+					month= month<10?"0"+month:month;
+					var day = date.getDate();//获取日期
+					day= day<10?"0"+day:day;
+					var hour = date.getHours();
+					hour= hour<10?"0"+hour:hour;
+					var minute = date.getMinutes();
+					minute= minute<10?"0"+minute:minute;
+					var week = date.getDay();//获取星期
+					var second=date.getSeconds();
+					second= second<10?"0"+second:second;
+					week = "日一二三四五六".charAt(week);
+					week="星期"+week;
+					result=year+"-"+month+"-"+day+" "+week+" "+hour+":"+minute+":"+second;
+					document.getElementById("time").innerHTML=result;
+			 }
+				show();
+				setInterval("show()",1000);//来源https://blog.csdn.net/qq_43285445/article/details/110660292
+			</script>
+	
+	<div id="return" style="text-shadow: #FFF 0px 0px 3px;text-align: center;width: 40px;">
+		<a href="../Jump.html" style="text-decoration: none;">
+			移动到主页
+		</a>
+	</div>
+	
+	<style type="text/css">
+		#return { 
+		position:fixed; 
+		left: 0%; 
+		top: 10%; 
+		border-radius: 1mm;
+		background: rgba(0, 0, 0, 0.5); 
+		text-align: center; } 
+	</style>
