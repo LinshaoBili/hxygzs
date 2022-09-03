@@ -181,25 +181,30 @@
 		<div style="height: 3px;"></div>
 	</div>
 
-	<div style="float:right;background-color: gainsboro;height: 150px;border-radius: 1mm;box-shadow:  1px 1px 1px;margin-top: 10px;">
-		<button onclick="sanlian_button()" class="sanlian_button_1" style="width: 250px;margin: 5px;">
-			<img src="../sanlian/sanlian_off.png" style="width: 240px;margin: 0px;margin-left: -1.5%;"  onclick="sanlian()" id="sanlian" />
+	<div style="float:right;background-color: gainsboro;height: 150px;border-radius: 3mm;box-shadow:  1px 1px 1px;margin-top: 10px;">
+		<button id="A1" onclick="sanlian()" style="width: 250px;background-color: rgba(0, 0, 0, 0);border: none;margin: 5px auto;margin-left: 5px;">
+			<img src="../sanlian/sanlian_off.png" style="width: 240px;margin: 0px;margin-left: -1.5%;border-radius: 3mm;" id="sanlian" />
 		</button>
 		<script>
 			function sanlian()
 			{
 				Element=document.getElementById('sanlian')
-				if (Element.src.match('sanlian'))
+				if 
+				(
+					Element.src.match('sanlian')
+				)
 				{
 					Element.src="../sanlian/sanlian.gif";
-				}
-				return
-			}
-		</script>
-		<script>
-			function sanlian_button()
-			{
-				setTimeout(function(){alert("谢谢您的三连")},3000);
+				};
+					document.getElementById("A1").disabled=true;
+				if 
+				(
+					setTimeout(function(){alert("谢谢您的三连")}, 3000)
+				);
+				if 
+				(
+					setTimeout(function(){Element.src="../sanlian/sanlian_on.png"},2800)
+				);
 			}
 		</script>
 	</div>
