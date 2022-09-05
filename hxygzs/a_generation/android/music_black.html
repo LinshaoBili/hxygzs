@@ -93,4 +93,17 @@
 		</div>
 	</div>
 
+    <script type="text/javascript">
+        var mobileAgent = new Array("windows");
+        var browser = navigator.userAgent.toLowerCase(); 
+        var isMobile = false; 
+        for (var i=0; i<mobileAgent.length; i++) {
+            if (browser.indexOf(mobileAgent[i])!=-1) { 
+                isMobile = true; 
+                location.href = '../music_black.html';
+                break; 
+            } 
+        } 
+	</script>
+
 </html>
