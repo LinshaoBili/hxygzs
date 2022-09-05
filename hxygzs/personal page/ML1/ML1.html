@@ -52,9 +52,6 @@ background-size: cover;
 </html>
 
 <div id="return" style="text-shadow: #FFF 0px 0px 3px;text-align: center;width: 40px;">
-	<a href="javascript:history.back(-1)" style="text-decoration: none;">
-		返回
-	</a>
 	<a href="../../../index.html" style="text-decoration: none;">
 		移动到主页
 	</a>
@@ -69,6 +66,32 @@ background-size: cover;
 	background: rgba(0, 0, 0, 0.5); 
 	text-align: center; } 
 </style>
+
+<script type="text/javascript">
+	var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+	var browser = navigator.userAgent.toLowerCase(); 
+	var isMobile = false; 
+	for (var i=0; i<mobileAgent.length; i++) {
+		if (browser.indexOf(mobileAgent[i])!=-1) { 
+			isMobile = true; 
+			location.href = 'ML1-PE.html';
+			break; 
+		} 
+	} 
+</script>
+
+<script type="text/javascript">
+	var mobileAgent = new Array("windows");
+	var browser = navigator.userAgent.toLowerCase(); 
+	var isMobile = false; 
+	for (var i=0; i<mobileAgent.length; i++) {
+		if (browser.indexOf(mobileAgent[i])!=-1) { 
+			isMobile = true; 
+			location.href = 'ML1-PC.html';
+			break; 
+		} 
+	} 
+</script>
 
 
 
