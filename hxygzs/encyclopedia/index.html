@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>亡国征战 - 百科</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0.4,maximum-scale=0.4,user-scalable=no" />
+		<link rel="icon" href="../png/logoO.png" type="image/x-icon">
+	</head>
+
+	<body style="background-color:rgba(0,0,0,0.95)">
+		<script src="js/mui.js">
+		</script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+	<div style="max-width:800px;margin:auto;">
+		<div id="match_colors" style="padding:5px;width:100%;text-align:center;border-radius:5px;">
+			<b style="font-size:25px;">亡国征战 - 百科</b>
+		</div>
+		<div id="match_colors" style="float:left;margin-left:5px;border-radius:5px;padding:5px;min-width:200px;margin-top:5px;">
+			<div style="text-align:center"><b>目录</b></div>
+			<br>
+			<div style="height:1px;background-color:rgba(0,0,0,0.95);margin-top:-15px;"></div>
+
+			<div style="text-align:center" onselectstart ='return false' ondragstart='return false'>
+				<div id="title" style="padding:5px;" onclick="onTileClick()">▶第一章·边境突袭</div>
+				<div id="content" style="border-radius:5px;background-color:rgba(255,230,0,0.50);overflow:hidden;height:0px;transition:height 0.2s;">
+					<a href="chapter I/重甲骑士.html" target="iframe_1" class="directory">
+						<div id="match_colors" class="directory">
+							重甲骑士
+						</div>
+					</a>
+					<a href="chapter I/极夜贤者.html" target="iframe_1" class="directory">
+						<div id="match_colors" class="directory">
+							极夜贤者
+						</div>
+					</a>
+					</div>
+				</div>
+				<script type="text/javascript">
+					var content = document.getElementById("content");
+					function onTileClick() { content.style.height = content.offsetHeight===60 ? 0+'px' : 60+'px';}
+				</script>
+			</div>
+
+		<div id="match_colors" style="float:right;border-radius:5px;padding:5px;max-width:550px;width:90%;height:800px;margin-top:5px;">
+			<iframe name="iframe_1" src="directory.html" style="border:none;width:100%;height:100%;"></iframe>
+		</div>
+	</div>
+
+	<style>
+		#match_colors
+		{
+			background-color:rgba(255,230,0,0.85);	
+		}
+	</style>
+
+	<style>
+		a.directory
+		{
+			text-decoration:none;
+			color:black;
+		}
+	</style>
+
+	<style>
+		div.directory
+		{
+			padding:2.5px;
+			margin:2.5px;
+			border-radius:5px;
+		}
+	</style>
+	
+</html>
