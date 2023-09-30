@@ -12,6 +12,10 @@ main#background {
   z-index: -5;
 }
 
+#background:hover{
+  background: linear-gradient(0deg, rgb(76, 76, 76), rgb(53, 53, 53));
+}
+
 div#h1 {
   margin: 0px auto 25px auto;
   padding: 0px 15px 5px 0px;
@@ -94,7 +98,6 @@ p.hi_p {
   margin: 0px 0px 0px 8px;
   transition: 0.5s;
   color: rgb(190, 190, 190);
-  box-shadow: -2px 0px 0px rgba(0, 0, 0, 0.4);
 }
 .device_PC {
   margin-top: 51.25px;
