@@ -1,0 +1,25 @@
+#pionter {
+  top: -50px;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff19;
+  position: absolute;
+  border-radius: 50px;
+  box-shadow: 0px 0px 50px #ffffff;
+  margin: -12.5px 0px 0px -12.5px;
+  z-index: -3;
+  transition: 0.1s ease;
+}
+
+#pionter:active {
+  width: 5px;
+  height: 5px;
+  margin: -2.5px 0px 0px -2.5px;
+  box-shadow: 0px 0px 10px #ffffff93;
+  transition: 0.25s ease;
+}
+
+* {
+  user-select: none;
+}

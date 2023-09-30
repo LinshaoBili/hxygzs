@@ -87,7 +87,7 @@ p.hi_p {
   float: left;
 }
 .device:hover {
-  margin-left: 40px;
+  margin-left: 10px;
   transition: 0.25s;
   background-color: rgba(0, 0, 0, 0.25);
 }
@@ -95,12 +95,12 @@ p.hi_p {
   background-color: rgba(0, 0, 0, 0.2);
   width: 191.75px;
   height: 72.37px;
-  margin: 0px 0px 0px 8px;
+  margin: 0px 0px 5px 8px;
   transition: 0.5s;
   color: rgb(190, 190, 190);
 }
 .device_PC {
-  margin-top: 51.25px;
+  margin-top: 56.25px;
 }
 .device_PC:hover {
   margin-left: 20px;
@@ -132,4 +132,10 @@ p {
   #h1_b_1 {
     font-size: 30px;
   }
+}
+
+#div{
+  width: 100%;
+  max-width: 625px;
+  margin: 0px auto 0px auto;
 }
