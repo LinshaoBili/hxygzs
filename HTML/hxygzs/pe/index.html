@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <title>和谐元工作室</title>
     <link rel="icon" href="../resource/Logo.png" type="image/x-icon" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/Mouse Follow.css" />
   </head>
@@ -11,28 +15,13 @@
   <body>
     <script src="../js/Mouse Follow.js"></script>
     <script type="text/javascript">
-      var mobileAgent = new Array(
-        "iphone",
-        "ipod",
-        "ipad",
-        "android",
-        "mobile",
-        "blackberry",
-        "webos",
-        "incognito",
-        "webmate",
-        "bada",
-        "nokia",
-        "lg",
-        "ucweb",
-        "skyfire"
-      );
+      var mobileAgent = new Array("windows");
       var browser = navigator.userAgent.toLowerCase();
       var isMobile = false;
       for (var i = 0; i < mobileAgent.length; i++) {
         if (browser.indexOf(mobileAgent[i]) != -1) {
           isMobile = true;
-          location.href = "../pe/index.html";
+          location.href = "../pc/index.html";
           break;
         }
       }
