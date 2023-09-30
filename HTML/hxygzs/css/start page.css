@@ -1,10 +1,9 @@
 body {
   overflow: hidden;
-  background-color: #000;
 }
 
 main#background {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(0deg, rgb(76, 76, 76), rgb(53, 53, 53));
   position: absolute;
   top: 0px;
   left: 0px;
@@ -118,8 +117,7 @@ p {
   }
 }
 @media screen and (max-width: 320px) {
-  #h1_b{
+  #h1_b {
     font-size: 30px;
   }
 }
-
