@@ -3,7 +3,7 @@ body {
 }
 
 main#background {
-  background: linear-gradient(0deg, rgb(76, 76, 76), rgb(53, 53, 53));
+  background-color: rgb(35, 35, 35);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -13,7 +13,7 @@ main#background {
 }
 
 #background:hover{
-  background: linear-gradient(0deg, rgb(76, 76, 76), rgb(53, 53, 53));
+  background-color: rgb(35, 35, 35);
 }
 
 div#h1 {
@@ -38,6 +38,7 @@ main#hallo {
   padding: 15px;
   width: 200px;
   transition: 0.5s;
+  overflow: hidden;
 }
 main#hallo:hover {
   margin-left: 10px;
@@ -58,14 +59,18 @@ p.hi_p {
 }
 .hi_div_l {
   float: left;
+  border-top-left-radius: 2.5px;
+  border-bottom-left-radius: 2.5px;
 }
 .hi_div_r {
   float: right;
 }
 .hi_div_l_d {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   height: 72.37px;
   width: 8px;
+  border-top-left-radius: 2.5px;
+  border-bottom-left-radius: 2.5px;
 }
 
 .device {
@@ -75,13 +80,17 @@ p.hi_p {
   margin: 45px 0px 0px 25px;
   transition: 0.5s;
   color: rgb(190, 190, 190);
+  border-top-left-radius: 2.5px;
+  border-bottom-left-radius: 2.5px;
 }
 .device_p {
   position: absolute;
   margin: 2.5px 0px 0px 25px;
 }
 .device_l_d {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 2.5px;
+  border-bottom-left-radius: 2.5px;
   height: 72.37px;
   width: 8px;
   float: left;
@@ -133,9 +142,15 @@ p {
     font-size: 30px;
   }
 }
+@media screen and (max-height: 500px) {
+  body{
+    overflow: scroll;
+  }
+}
 
 #div{
   width: 100%;
   max-width: 625px;
   margin: 0px auto 0px auto;
 }
+
