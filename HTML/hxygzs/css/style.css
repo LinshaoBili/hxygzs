@@ -1,5 +1,5 @@
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
 
 #background {
@@ -11,4 +11,28 @@ body{
   position: absolute;
   overflow: hidden;
   z-index: -5;
+}
+#background:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+iframe {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.rgba {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.c190 {
+  color: rgb(190, 190, 190);
+}
+
+.c150 {
+  color: rgb(150, 150, 150);
+}
+
+p,b{
+  margin: 0px;
 }
