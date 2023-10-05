@@ -19,7 +19,3 @@
   box-shadow: 0px 0px 10px #ffffff93;
   transition: 0.25s ease;
 }
-
-* {
-  user-select: none;
-}

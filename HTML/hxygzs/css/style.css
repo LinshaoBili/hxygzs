@@ -3,7 +3,7 @@ body {
 }
 
 #background {
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(45, 45, 45);
   width: 100%;
   height: 100%;
   top: 0px;
@@ -13,7 +13,7 @@ body {
   z-index: -5;
 }
 #background:hover {
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(45, 45, 45);
 }
 
 iframe {
@@ -35,4 +35,8 @@ iframe {
 
 p,b{
   margin: 0px;
+}
+
+* {
+  user-select: none;
 }

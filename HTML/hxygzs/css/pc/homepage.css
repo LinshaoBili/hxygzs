@@ -81,7 +81,7 @@
   #logo,
   #logo_img {
     width: 100px;
-    transition: 1s;
+    transition: 0.25s;
     transform: translateY(25px);
   }
   #introduction {
@@ -91,22 +91,24 @@
   }
 }
 
-#cooperate_d {
+#cooperate_d,
+#member_d {
   width: 100px;
   height: 42.5px;
-  margin: 250px 0px 0px 0px;
+  margin: 225px 0px 0px 0px;
   overflow: hidden;
   transition: 0.5s;
 }
-#cooperate_d_2 {
+#cooperate_d_2,
+#member_d_2 {
   width: 80px;
   height: 22.5px;
   padding: 10px;
   text-align: center;
   transition: 0.5s;
 }
-#cooperate_d_2:hover{
-  box-shadow:inset 0px 2.5px 5px 1px #ffffff30;
+#cooperate_d_2:hover {
+  box-shadow: inset 0px 2.5px 5px 1px #ffffff30;
   border-radius: 5px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -124,8 +126,62 @@
   transform: translateY(0px) translateX(-100px);
   transition: 0.5s;
 }
-#cooperate_d:hover #if_cooperate{
+#cooperate_d:hover #if_cooperate {
   opacity: 1;
   transform: translateY(0px) translateX(0px);
   transition: 0.25s;
+}
+
+#member {
+  margin: -200px 0px 0px 50px;
+}
+#member_d {
+  position: absolute;
+  margin-top: 250px;
+  height: 42.5px;
+  transition: 0.25s;
+}
+#member_d:hover {
+  height: 180px;
+  width: 500px;
+  transform: translateY(-120px);
+}
+#member_d:hover #member_d_2 {
+  transform: translateY(120px);
+}
+#member_d:hover #if_member {
+  transform: translateY(-39.5px) translateX(100px);
+  opacity: 1;
+  transition: 0.25s;
+}
+#member_d_2 {
+  transition: 0.25s;
+}
+#member_d_2:hover {
+  box-shadow: inset 2.5px 0px 5px 1px #ffffff30;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: 0.25s;
+}
+#if_member {
+  transform: translateY(-130px) translateX(100px);
+  opacity: 0;
+  width: 400px;
+  height: 160px;
+  transition: 0.25s;
+}
+@media screen and (max-width: 550px) {
+  #if_member {
+    width: 300px;
+    height: 250px;
+    transition: 1s;
+  }
+  #member_d:hover {
+    height: 255px;
+    transform: translateY(-120px);
+  }
+  #member {
+    margin: -195px 0px 0px 50px;
+  }
 }
