@@ -1,23 +1,27 @@
-.member_body {
-  width: 50px;
-  margin: 0px auto 0px auto;
+p.n1:before {
+  content: "成非亦明";
 }
-img {
-  border-radius: 100%;
-  width: 100%;
+p.n2:before {
+  content: "san";
 }
-p {
-  width: 100%;
-  text-align: center;
+p.n3:before {
+  content: "林少";
 }
-#member_body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  transition: 1s;
+p.n4:before {
+  content: "玉米肉干";
 }
-@media screen and (max-width: 300px) {
-  #member_body {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    transition: 1s;
-  }
+p.n5:before {
+  content: "貓鴿";
+}
+p.n6:before {
+  content: "凋零的鱼";
+}
+p.n7:before {
+  content: "efsdw";
+}
+p.n8:before {
+  content: "友好的Him";
+}
+p.n9:before {
+  content: "黎空";
 }

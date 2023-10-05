@@ -11,7 +11,7 @@
   z-index: -1;
   transition: 0.1s ease;
 }
-#pionter:hover {
+#pionter:hover,#pionter:active {
   width: 5px;
   height: 5px;
   margin: -2.5px 0px 0px -2.5px;

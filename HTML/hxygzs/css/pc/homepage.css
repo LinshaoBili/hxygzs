@@ -92,7 +92,8 @@
 }
 
 #cooperate {
-  transition: 1s;
+  transition: 1s linear;
+  width: 100px;
 }
 #cooperate:hover {
   margin-bottom: -240px;

@@ -1,0 +1,33 @@
+.member_body {
+  width: 50px;
+  margin: 0px auto 0px auto;
+  text-decoration: none;
+}
+img {
+  border-radius: 100%;
+  width: 100%;
+}
+p {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+#member_body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  transition: 1s;
+}
+@media screen and (max-width: 300px) {
+  #member_body {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition: 1s;
+  }
+}
+
+.member_body {
+  transition: 0.5s;
+}
+.member_body:hover {
+  transform: translateY(-5px);
+  transition: 0.25s;
+}
