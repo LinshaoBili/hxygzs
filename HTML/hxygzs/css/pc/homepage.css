@@ -91,6 +91,13 @@
   }
 }
 
+#cooperate {
+  transition: 1s;
+}
+#cooperate:hover {
+  margin-bottom: -240px;
+  transition: 0.25s;
+}
 #cooperate_d,
 #member_d {
   width: 100px;
@@ -133,7 +140,7 @@
 }
 
 #member {
-  margin: -200px 0px 0px 50px;
+  margin: -200px 0px 0px 100px;
 }
 #member_d {
   position: absolute;
@@ -163,6 +170,7 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   transition: 0.25s;
+  z-index: 0;
 }
 #if_member {
   transform: translateY(-130px) translateX(100px);
@@ -171,6 +179,7 @@
   height: 160px;
   transition: 0.25s;
 }
+
 @media screen and (max-width: 550px) {
   #if_member {
     width: 300px;
@@ -182,6 +191,6 @@
     transform: translateY(-120px);
   }
   #member {
-    margin: -195px 0px 0px 50px;
+    margin: -195px 0px 0px 100px;
   }
 }
