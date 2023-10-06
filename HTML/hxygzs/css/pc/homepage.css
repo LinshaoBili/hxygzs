@@ -34,12 +34,12 @@
   margin: auto auto auto auto;
 }
 #logo_img:hover {
-  transform: rotate(10deg) translateY(5px);
+  transform: rotate(5deg) translateY(5px);
   transition: 0.75s;
   box-shadow: 0px 0px 15px #fff;
 }
 #logo_img:active {
-  transform: rotate(-5deg) translateY(-3.5px);
+  transform: rotate(-2.5deg) translateY(-3.5px);
   transition: 0.5s;
   box-shadow: 0px 0px 5px #fff;
 }
