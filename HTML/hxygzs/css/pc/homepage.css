@@ -25,6 +25,7 @@
   width: 250px;
   float: right;
   transform: translateY(-50px);
+  transition: 1s;
 }
 #logo_img {
   width: 100%;
@@ -68,25 +69,32 @@
   #logo_img {
     width: 150px;
     transition: 1s;
+    transform: translateY(0px);
   }
 }
 @media screen and (max-width: 650px) {
   #logo,
   #logo_img {
-    width: 100px;
+    width: 125px;
+    transition: 0.5s;
+    transform: translateY(15px);
+  }
+  #introduction {
+    margin-left: 50px;
     transition: 1s;
   }
 }
 @media screen and (max-width: 600px) {
   #logo,
   #logo_img {
-    width: 100px;
+    width: 120px;
     transition: 0.25s;
     transform: translateY(25px);
   }
   #introduction {
     width: 325px;
     height: 180px;
+    margin-left: 20px;
     transition: 0.5s;
   }
 }
@@ -181,7 +189,7 @@
   transition: 0.25s;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   #if_member {
     width: 300px;
     height: 250px;
@@ -194,4 +202,57 @@
   #member {
     margin: -195px 0px 0px 100px;
   }
+}
+
+#right {
+  width: 200px;
+  float: right;
+  margin-top: 50px;
+  transform: translateX(225px);
+  border-radius: 5px;
+  transition: 0.25s;
+}
+@media screen and (max-width: 700px) {
+  #right {
+    transform: translateX(0px);
+  }
+}
+#works,
+#activity {
+  text-align: center;
+  margin: 5px;
+  overflow: hidden;
+}
+#works_p,
+#activity_p {
+  padding: 5px 5px 0px 5px;
+  transition: 0.25s;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#if_works,
+#if_activity {
+  width: 100%;
+  height: 0px;
+  margin-top: -500px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.5s;
+}
+#works:hover #works_p,
+#works:hover #if_works,
+#activity:hover #activity_p,
+#activity:hover #if_activity {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.25s;
+}
+#works:hover #if_works {
+  margin-top: 0px;
+  height: 300px;
+  transition: 0.25s;
+}
+#activity:hover #if_activity {
+  margin-top: 0px;
+  height: 300px;
+  transition: 0.25s;
 }

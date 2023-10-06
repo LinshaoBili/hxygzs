@@ -1,7 +1,9 @@
-body {
+#hidden{
   overflow: hidden;
 }
-
+*::-webkit-scrollbar{
+  display: none;
+}
 #background {
   background-color: rgb(45, 45, 45);
   width: 100%;
@@ -9,6 +11,7 @@ body {
   top: 0px;
   left: 0px;
   position: absolute;
+  position: fixed;
   overflow: hidden;
   z-index: -5;
 }
