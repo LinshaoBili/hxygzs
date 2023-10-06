@@ -54,7 +54,7 @@
   transition: 0.5s;
 }
 #introduction:hover {
-  box-shadow: inset 0px 0px 5px 1px #ffffff35;
+  box-shadow: inset 0px 0px 15px 1px #ffffff35;
   border-radius: 10px;
   transition: 0.25s;
 }
@@ -124,7 +124,7 @@
   transition: 0.5s;
 }
 #cooperate_d_2:hover {
-  box-shadow: inset 0px 2.5px 5px 1px #ffffff30;
+  box-shadow: inset 0px 2.5px 5px -2px #ffffff30;
   border-radius: 5px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -174,7 +174,7 @@
   transition: 0.25s;
 }
 #member_d_2:hover {
-  box-shadow: inset 2.5px 0px 5px 1px #ffffff30;
+  box-shadow: inset 2.5px 0px 5px -2px #ffffff30;
   border-radius: 5px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
