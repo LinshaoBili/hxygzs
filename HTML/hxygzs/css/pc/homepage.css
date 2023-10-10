@@ -147,7 +147,6 @@
   transition: 0.25s;
 }
 
-
 #cooperate {
   transition: 0.25s linear;
   width: 100px;
@@ -180,7 +179,6 @@
   transform: translateY(0px) translateX(0px);
   transition: 0.25s;
 }
-
 
 #right {
   width: 200px;
@@ -253,4 +251,23 @@
   margin: 0px auto 0px auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+#works_d,
+#activity_d {
+  margin-top: -20px;
+  padding-bottom: 12.5px;
+  border-radius: 10%;
+  opacity: 0.5;
+  height: 20px;
+  transition: 1s;
+}
+#works:hover #works_d,#activity:hover #activity_d {
+  opacity: 0;
+  transition: 0.5s;
+}
+#works:hover #works_d,#activity:hover #activity_d {
+  height: 0px;
+  font-size: 0px;
+  transition: 1s;
 }
